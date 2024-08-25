@@ -1,10 +1,11 @@
-import  { useState, useEffect } from "react";
+import  {  useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { MoonIcon, SunIcon } from "lucide-react";
+import { useRecoilState } from "recoil";
+import { themeState } from "@/store/atom/themeAtom";
 
 const ModeToggle = () => {
-  const [theme, setTheme] = useState("light");
-
+ const [theme, setTheme] = useRecoilState(themeState);
   useEffect(() => {
     // On component mount, check if there's a theme stored in localStorage
     const savedTheme = localStorage.getItem("theme");
