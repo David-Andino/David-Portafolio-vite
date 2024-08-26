@@ -44,7 +44,7 @@ const SubTitle: React.FC = () => (
 
 const Header: React.FC = () => {
   return (
-    <div className="flex flex-col items-center px-4 gap-10 py-12">
+    <div className="flex flex-col items-center px-4 gap-10 py-12  ">
       <div className="text-center my-4">
         <WordAnimation />
         <div className="mt-2 text-center">

@@ -72,7 +72,7 @@ const Experience: React.FC = () => {
 
   return (
     <motion.div
-      className="w-full max-w-4xl mx-auto p-4 sm:p-6 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-blue-900 rounded-xl shadow-lg mt-10"
+      className="w-full max-w-6xl mx-auto p-4 sm:p-6 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-blue-900 rounded-xl shadow-lg mt-10"
       variants={containerVariants}
       initial="hidden"
       animate="visible"

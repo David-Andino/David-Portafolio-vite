@@ -60,24 +60,22 @@ const Icons = {
 };
 
 const DATA = {
-  navbar: [
-    { href: "#", icon: HomeIcon, label: "Home" },
-  ],
+  navbar: [{ href: "#", icon: HomeIcon, label: "Home" }],
   contact: {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "#",
+        url: "https://github.com/rijoksd",
         icon: Icons.github,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "#",
+        url: "https://www.linkedin.com/in/rijoksd/",
         icon: Icons.linkedin,
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:rijobdk@gmail.com",
         icon: Icons.email,
       },
     },
@@ -86,7 +84,7 @@ const DATA = {
 
 export function DockDemo() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 flex w-full flex-col items-center justify-end overflow-hidden pb-8 ">
+    <div className="fixed bottom-0 left-0 right-0 flex w-full flex-col items-center justify-end overflow-hidden pb-8 z-50 ">
       <TooltipProvider>
         <Dock magnification={65} distance={100} >
           {DATA.navbar.map((item) => (
@@ -116,6 +114,8 @@ export function DockDemo() {
                 <TooltipTrigger asChild>
                   <a
                     href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
                       "size-12 rounded-full"
