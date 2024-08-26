@@ -73,10 +73,13 @@ const About: React.FC = () => {
           className="text-sm md:text-base text-gray-600 dark:text-gray-400 text-center md:text-left mb-4"
           variants={itemVariants}
         >
-          I'm a freelance MERN stack developer passionate about creating
-          innovative web solutions. Specializing in MongoDB, Express.js,
-          React.js, and Node.js, I bring ideas to life through robust and
-          scalable applications.
+          I'm a skilled MERN stack developer with a strong passion for crafting
+          innovative web solutions. With expertise in MongoDB, Express.js,
+          React.js, and Node.js, I've successfully developed real-world projects
+          that are both robust and scalable. I thrive on turning ideas into
+          functional applications and continuously strive to improve my craft.
+          My goal is to create efficient, user-friendly, and impactful digital
+          experiences.
         </motion.p>
         <motion.p
           className="text-sm md:text-base text-gray-600 dark:text-gray-400 text-center md:text-left"
