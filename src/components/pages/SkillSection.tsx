@@ -69,7 +69,7 @@ const SkillsSection: React.FC = () => {
   return (
     <motion.div
       ref={ref}
-      className="w-full max-w-6xl mx-auto p-4 sm:p-6 lg:p-8 bg-background rounded-xl shadow-lg mt-10"
+      className="w-full max-w-6xl mx-auto p-4 sm:p-6 lg:p-8 bg-background rounded-xl shadow-lg mt-10   mb-6"
       variants={containerVariants}
       initial="hidden"
       animate={controls}

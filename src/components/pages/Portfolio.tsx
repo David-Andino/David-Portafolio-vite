@@ -35,6 +35,7 @@ const AnimatedSection = ({ children }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.2,
+    triggerOnce: true,
   });
   const scrollDirection = useScrollDirection();
 
@@ -49,7 +50,7 @@ const AnimatedSection = ({ children }) => {
   const variants = {
     hidden: {
       opacity: 0,
-      y: scrollDirection === "down" ? 100 : -100,
+      y: scrollDirection === "down" ? 50 : -50,
     },
     visible: {
       opacity: 1,
@@ -67,29 +68,35 @@ const AnimatedSection = ({ children }) => {
       initial="hidden"
       animate={controls}
       variants={variants}
+      className="w-full my-8 flex justify-center"
     >
-      {children}
+      <div className="w-full max-w-6xl">{children}</div>
     </motion.div>
   );
 };
 
 function Portfolio() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col items-center justify-center">
       <ParticlesDemo />
       <DockDemo />
-      <div className="flex flex-col items-center justify-center p-2">
+      <div className="flex flex-col items-center justify-center p-2 w-full">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
+          className="w-full flex justify-center"
         >
-          <Header />
+          <div className="w-full max-w-6xl">
+            <Header />
+          </div>
         </motion.div>
         <AnimatedSection>
           <About />
         </AnimatedSection>
-            <Experience />
+        <AnimatedSection>
+          <Experience />
+        </AnimatedSection>
         <AnimatedSection>
           <SkillsSection />
         </AnimatedSection>
