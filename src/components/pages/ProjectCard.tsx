@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
- 
+
 interface Project {
   title: string;
   description: string;

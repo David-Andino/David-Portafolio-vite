@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import { Globe, Github } from "lucide-react";
 
-import chatImage from "../../assets/projects/chat.png"
-import turfImage from "../../assets/projects/turf.png"
-import foodImage from "../../assets/projects/food.png"
-import todoImage from "../../assets/projects/todo.png"
-import eStoreImage from "../../assets/projects/estore.png"
-import expenseTrackerImage from "../../assets/projects/expense-tracker.png"
+import chatImage from "../../assets/projects/chat.png";
+import turfImage from "../../assets/projects/turf.png";
+import foodImage from "../../assets/projects/food.png";
+import todoImage from "../../assets/projects/todo.png";
+import eStoreImage from "../../assets/projects/estore.png";
+import expenseTrackerImage from "../../assets/projects/expense-tracker.png";
 
 interface Project {
   title: string;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, ReactNode } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { DockDemo } from "../ui/DockDemo";
@@ -9,6 +9,10 @@ import Experience from "./Experience";
 import SkillsSection from "./SkillSection";
 import ProjectsSection from "./Project";
 import Footer from "./Footer";
+
+interface AnimatedSectionProps {
+  children: ReactNode;
+}
 
 const useScrollDirection = () => {
   const [scrollDirection, setScrollDirection] = useState("down");
@@ -32,7 +36,7 @@ const useScrollDirection = () => {
   return scrollDirection;
 };
 
-const AnimatedSection = ({ children }) => {
+const AnimatedSection:React.FC<AnimatedSectionProps> = ({ children }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.2,
