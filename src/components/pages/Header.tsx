@@ -9,7 +9,7 @@ interface GradientTextProps {
 
 const WordAnimation: React.FC = () => (
   <GradientText
-    className="font-display text-center   font-bold tracking-[-0.05em] text-3xl md:text-4xl lg:text-5xl p-2"
+    className="font-display text-center   font-bold tracking-[-0.05em]  text-4xl lg:text-6xl md:p-2"
     text="Hi, I'm Rijo Sebastian"
   />
 );

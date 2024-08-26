@@ -187,7 +187,7 @@ const projects: Project[] = [
 
 const ProjectsSection: React.FC = () => {
   return (
-    <section className="py-12 w-full max-w-6xl mb-10 ">
+    <section className=" w-full max-w-6xl  ">
       <div className="container mx-auto px-4 ">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}

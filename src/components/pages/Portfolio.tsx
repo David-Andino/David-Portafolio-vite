@@ -8,6 +8,7 @@ import About from "./About";
 import Experience from "./Experience";
 import SkillsSection from "./SkillSection";
 import ProjectsSection from "./Project";
+import Footer from "./Footer";
 
 const useScrollDirection = () => {
   const [scrollDirection, setScrollDirection] = useState("down");
@@ -102,6 +103,9 @@ function Portfolio() {
         </AnimatedSection>
         <AnimatedSection>
           <ProjectsSection />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Footer />
         </AnimatedSection>
       </div>
     </div>
