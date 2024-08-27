@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { CalendarIcon, HomeIcon, MailIcon } from "lucide-react";
-
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -11,7 +10,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Dock, DockIcon } from "@/components/magicui/dock";
-import  ModeToggle  from "@/components/ModeToggle";
+import ModeToggle from "@/components/ModeToggle";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -82,11 +81,32 @@ const DATA = {
   },
 };
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+
+    return () => {
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  }, []);
+
+  return isMobile;
+}
+
 export function DockDemo() {
+  const isMobile = useIsMobile();
+
   return (
-    <div className="fixed bottom-0 left-0 right-0 flex w-full flex-col items-center justify-end overflow-hidden pb-8 z-50 ">
+    <div className="fixed bottom-0 left-0 right-0 flex w-full flex-col items-center justify-end overflow-hidden pb-8 z-50">
       <TooltipProvider>
-        <Dock magnification={65} distance={100} >
+        <Dock magnification={isMobile ? 0 : 65} distance={isMobile ? 0 : 100}>
           {DATA.navbar.map((item) => (
             <DockIcon key={item.label}>
               <Tooltip>
