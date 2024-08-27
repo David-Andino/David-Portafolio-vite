@@ -83,7 +83,7 @@ const AnimatedSection:React.FC<AnimatedSectionProps> = ({ children }) => {
 function Portfolio() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
-      <ParticlesDemo />
+      {/* <ParticlesDemo /> */}
       <DockDemo />
       <div className="flex flex-col items-center justify-center p-2 w-full">
         <motion.div
