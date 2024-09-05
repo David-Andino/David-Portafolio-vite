@@ -1,5 +1,5 @@
  
-# Ract Portfolio
+# React Portfolio
 
 Welcome to my personal portfolio built with React, TypeScript, Tailwind CSS, Framer Motion, Magic UI, and Shadcn UI. This portfolio showcases my work, skills, and experiences with engaging animations and a highly responsive design.
 
