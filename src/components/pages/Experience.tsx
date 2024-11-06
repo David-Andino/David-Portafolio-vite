@@ -18,14 +18,14 @@ const Experience: React.FC = () => {
       location: "Infopark, Kochi",
       duration: "Oct 2024 - Present",
       description: "",
-      icon: <BriefcaseIcon className="w-6 h-6" />,
+      icon: <CodeIcon className="w-6 h-6" />,
       skills: ["MongoDB", "Express.js", "React", "Node.js"],
     },
     {
       title: "MERN Stack Intern",
       company: "Futura Labs Technologies",
       location: "Calicut",
-      duration: "Feb 2024 - Aug 2024",
+      duration: "Feb 2024 - Sep 2024",
       description:
         "Working on MERN stack projects, contributing to full-stack development.",
       icon: <BriefcaseIcon className="w-6 h-6" />,
