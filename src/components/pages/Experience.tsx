@@ -12,6 +12,15 @@ import { BriefcaseIcon, CodeIcon } from "lucide-react";
 
 const Experience: React.FC = () => {
   const experiences = [
+   {
+      title: "Junior Software Developer",
+      company: "Datafloat Technologies India Pvt Ltd",
+      location: "Infopark, Kochi",
+      duration: "Oct 2024 - Present",
+      description: "",
+      icon: <BriefcaseIcon className="w-6 h-6" />,
+      skills: ["MongoDB", "Express.js", "React", "Node.js"],
+    },
     {
       title: "MERN Stack Intern",
       company: "Futura Labs Technologies",
