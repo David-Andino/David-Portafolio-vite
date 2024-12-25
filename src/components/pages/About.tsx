@@ -56,7 +56,7 @@ const About: React.FC = () => {
           }}
         >
           <img
-            src="/David.jpg"
+            src="/David-Portafolio-vite/David.jpg"
             alt="David Andino"
             className="w-full h-full object-cover object-left-top"
           />
