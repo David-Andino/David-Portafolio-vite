@@ -64,17 +64,17 @@ const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/rijoksd",
+        url: "https://github.com/David-Andino",
         icon: Icons.github,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/rijoksd/",
+        url: "https://www.linkedin.com/in/david-andino/",
         icon: Icons.linkedin,
       },
       email: {
         name: "Send Email",
-        url: "mailto:rijobdk@gmail.com",
+        url: "mailto:davidricandino@gmail.com",
         icon: Icons.email,
       },
     },

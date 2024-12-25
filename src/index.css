@@ -68,3 +68,7 @@
   }
 }
 
+/* styles.css */
+.icon-dark-mode {
+  fill: white; /* Cambia el color de los iconos a blanco */
+}

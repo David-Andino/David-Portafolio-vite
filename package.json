@@ -19,6 +19,7 @@
     "framer-motion": "^11.3.30",
     "lucide-react": "^0.435.0",
     "next-themes": "^0.3.0",
+    "portfolio": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icon-cloud": "^4.1.4",

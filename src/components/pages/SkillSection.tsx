@@ -10,24 +10,24 @@ const slugs = [
   "nextdotjs",
   "postman",
   "mongodb",
-  "java",
+  "C#",
   "react",
   "android",
   "html5",
   "css3",
   "nodedotjs",
   "express",
-  "prisma",
+  "Oracle",
   "postgresql",
   "firebase",
-  "vercel",
+  "netcore",
   "testinglibrary",
-  "jest",
+  "Genexus",
   "docker",
   "git",
   "github",
   "visualstudiocode",
-  "figma",
+  "MySQL",
 ];
 
 const SkillsSection: React.FC = () => {
@@ -78,7 +78,7 @@ const SkillsSection: React.FC = () => {
         className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-center text-gray-800 dark:text-gray-200"
         variants={itemVariants}
       >
-        Skills
+        Habilidades
       </motion.h2>
 
       <div className="flex flex-col items-center justify-center space-y-6">

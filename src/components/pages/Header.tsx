@@ -22,7 +22,7 @@ const WordAnimation: React.FC = () => (
         },
       }}
     >
-      {Array.from("Hi, I'm Rijo Sebastian").map((letter, index) => (
+      {Array.from("Soy David Andino").map((letter, index) => (
         <motion.span
           key={index}
           className="inline-block"
@@ -59,7 +59,7 @@ const SubTitle: React.FC = () => (
   >
     <BoxReveal boxColor="#3b82f6" duration={0.5}>
       <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-gray-700 dark:text-gray-300 text-center">
-        Full Stack Developer
+        Desarrollador jr | Ingeniero en Sistemas
       </p>
     </BoxReveal>
   </motion.div>

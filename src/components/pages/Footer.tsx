@@ -18,28 +18,28 @@ const Footer: React.FC = () => {
           className="flex justify-center items-center space-x-4 text-sm"
         >
           <a
-            href="tel:+919446626926"
+            href="tel:+50496421851"
             className="p-2 hover:text-purple-600 transition-colors"
-            aria-label="Call Rijo Sebastian"
+            aria-label="tel David Andino"
           >
             <Phone className="h-5 w-5" />
           </a>
           <a
-            href="mailto:rijobdk@gmail.com"
+            href="mailto:davidricandino@gmail.com"
             className="p-2 hover:text-purple-600 transition-colors"
-            aria-label="Email Rijo Sebastian"
+            aria-label="Email David Andino"
           >
             <Mail className="h-5 w-5" />
           </a>
           <span className="flex items-center">
             Made with <Heart className="h-4 w-4 mx-1 text-red-400" /> by
             <a
-              href="https://www.instagram.com/rijo_ksd/"
+              href="https://www.instagram.com/david_andino_7/"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-1 font-semibold hover:underline"
             >
-              Rijo Sebastian
+              David Andino
             </a>
           </span>
         </motion.div>

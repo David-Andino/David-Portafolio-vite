@@ -56,8 +56,8 @@ const About: React.FC = () => {
           }}
         >
           <img
-            src="/me.png"
-            alt="Rijo Sebastian"
+            src="/David.jpg"
+            alt="David Andino"
             className="w-full h-full object-cover object-left-top"
           />
         </motion.div>
@@ -67,26 +67,22 @@ const About: React.FC = () => {
           className="text-2xl md:text-3xl font-bold mb-4 text-gray-800 dark:text-gray-200 text-center md:text-left"
           variants={itemVariants}
         >
-          About Me
+          Acerca de mi
         </motion.h2>
         <motion.p
           className="text-sm md:text-base text-gray-600 dark:text-gray-400 text-center md:text-left mb-4"
           variants={itemVariants}
         >
-          I'm a skilled MERN stack developer with a strong passion for crafting
-          innovative web solutions. With expertise in MongoDB, Express.js,
-          React.js, and Node.js, I've successfully developed real-world projects
-          that are both robust and scalable. I thrive on turning ideas into
-          functional applications and continuously strive to improve my craft.
-          My goal is to create efficient, user-friendly, and impactful digital
-          experiences.
+          Soy un desarrollador apasionado con 4 años de experiencia creando soluciones eficientes y escalables. 
+          Tengo experiencia en el desarrollo de aplicaciones web y de escritorio. 
+          Me destaco por mi capacidad para resolver problemas, aprender rápidamente y adaptarme a entornos dinámicos.
         </motion.p>
         <motion.p
           className="text-sm md:text-base text-gray-600 dark:text-gray-400 text-center md:text-left"
           variants={itemVariants}
         >
-          My commitment to continuous learning ensures cutting-edge solutions
-          for every project.
+          Busco aportar valor a equipos innovadores en un mercado laboral competitivo, ofreciendo mi compromiso, 
+          habilidades técnicas y enfoque en resultados para contribuir al éxito de cada proyecto.
         </motion.p>
       </div>
     </motion.div>

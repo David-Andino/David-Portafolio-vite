@@ -13,33 +13,33 @@ import { BriefcaseIcon, CodeIcon } from "lucide-react";
 const Experience: React.FC = () => {
   const experiences = [
    {
-      title: "Junior Software Developer",
-      company: "Datafloat Technologies India Pvt Ltd",
-      location: "Infopark, Kochi",
-      duration: "Oct 2024 - Present",
-      description: "",
+      title: "Gestor de Inventario y Ventas",
+      company: "Mercadito La Reforma",
+      location: "Danlí, El Paraíso",
+      duration: "May 2023 - Ago 2023",
+      description: "Aplicacion de escritorio enfocada al manejo del inventario y ventas, con un apartado de gráficos que muestra las ventas diarias, semanales y mensuales asi como el top de productos más vendidos y la caja con mas ventas, con gestor de stock y roles de usuario (Administrador y Empleado) compatible con lector de código de barras.",
       icon: <CodeIcon className="w-6 h-6" />,
-      skills: ["MongoDB", "Express.js", "React", "Node.js"],
+      skills: ["C#", "My Sql", ".Net framework"],
     },
     {
-      title: "MERN Stack Intern",
-      company: "Futura Labs Technologies",
-      location: "Calicut",
-      duration: "Feb 2024 - Sep 2024",
+      title: "Generador de Reportes y Gestor de movimiento del Mercado de criptomonedas",
+      company: "Wash-Nyc y Algomango",
+      location: "Remoto",
+      duration: "Feb 2022 - May 2022",
       description:
-        "Working on MERN stack projects, contributing to full-stack development.",
+        "Se desarrollarón Aplicaciones de Monitoreo del bot Mediante un Dashboard, Mensajes automatizados en Telegram y un generador de documentos de Excel.",
       icon: <BriefcaseIcon className="w-6 h-6" />,
-      skills: ["MongoDB", "Express.js", "React", "Node.js"],
+      skills: ["C#", "Firebase", ".Net Framework", "Node.js"],
     },
     {
-      title: "Freelance Web Developer",
-      company: "Self-employed",
-      location: "Remote",
-      duration: "2020 - 2024",
+      title: "Bot trading",
+      company: "Wash-Nyc",
+      location: "Remoto",
+      duration: "2021 - 2022",
       description:
-        "Developing custom web solutions for various clients, specializing in responsive and dynamic websites.",
+        "desarrollo de un bot de trading utilizando Node.js, C#, Firebase.",
       icon: <CodeIcon className="w-6 h-6" />,
-      skills: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
+      skills: ["Firebase", "C#", ".Net Framework", "Node js", "Alpaca", "Binance", "Kucoin", "CryptoExchange.Net"],
     },
   ];
 
@@ -90,7 +90,7 @@ const Experience: React.FC = () => {
         className="text-3xl sm:text-4xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
         variants={titleVariants}
       >
-        Work Experience
+        Experiencia Laboral
       </motion.h2>
 
       <div className="space-y-6">

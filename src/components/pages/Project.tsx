@@ -2,12 +2,11 @@ import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import { Globe, Github } from "lucide-react";
 
-import chatImage from "../../assets/projects/chat.png";
-import turfImage from "../../assets/projects/turf.png";
-import foodImage from "../../assets/projects/food.png";
-import todoImage from "../../assets/projects/todo.png";
-import eStoreImage from "../../assets/projects/estore.png";
-import expenseTrackerImage from "../../assets/projects/expense-tracker.png";
+
+import turfImage from "../../assets/projects/landingpage.png";
+import foodImage from "../../assets/projects/1__woXdoGspsNHgWXX4syipA.jpg";
+import todoImage from "../../assets/projects/estadoserver.png";
+import expenseTrackerImage from "../../assets/projects/GestionPW.png";
 
 interface Project {
   title: string;
@@ -18,170 +17,130 @@ interface Project {
 }
 const projects: Project[] = [
   {
-    title: "Turf Spot",
+    title: "Página Inscripción Tecno Fest 2024",
     description:
-      "TurfSpot is a MERN stack application for booking turf grounds, featuring User, Owner, and Admin modules. Users can book turfs, manage bookings, and apply to become owners. Owners can add turfs and manage bookings. Admins oversee user management and transactions, ensuring a smooth booking experience.",
+      "Sitio Web para inscribirse al Evento anual organizado por la carrera Ing. en Sistemas.",
     technologies: [
       "React.js",
       "JavaScript",
-      "MongoDB",
-      "Express.js",
-      "Node.js",
-      "Tailwind CSS",
-      "Razorpay",
-      "Daisy UI",
-      "Cloudinary",
-      "Redux Toolkit",
-      "Redux Persist",
+      "TypeScript",
+      "CSS",
+      "HTML",
+      "Vite",
+      "axios",
+      "My Sql",
     ],
     links: [
       {
         type: "Website",
-        href: "https://turf-spot.vercel.app/",
+        href: "https://tecno-fest.com/",
         icon: <Globe className="w-4 h-4" />,
       },
       {
         type: "Source",
-        href: "https://github.com/RijoKsd/TurfSpot",
+        href: "https://github.com/UNICAH-ICC-SAP/LandingPageTecnoFest.git",
+        icon: <Github className="w-4 h-4" />,
+      },
+      {
+        type: "Source",
+        href: "https://github.com/UNICAH-ICC-SAP/ApiTecnoFest.git",
         icon: <Github className="w-4 h-4" />,
       },
     ],
     image: turfImage,
   },
   {
-    title: "Expense Tracker",
+    title: "Gestion Prácticas Web",
     description:
-      "Expense-Tracker is a MERN stack application that helps users manage their monthly expenses. It features secure login with JWT, an adjustable monthly expense limit, and tools to add, view, and delete expenses. The app also provides a graphical overview of the remaining balance and allows users to track expenses across different months",
+      "Aplicación desarrollada para la gestión de prácticas de los estudiantes de la Universidad Católica de Honduras, Facilitando tanto al Equipo de Administración y alumnos. Apartado de Administración tiene la funcionalidad de crear ternas, agregar docentes, actualizar y eliminar terna, y el apartado de alumno podrá ver la terna a la que pertenece con los docentes asignados al igual de cual será el coordinador de dicha terna.",
     technologies: [
       "React.js",
       "TypeScript",
-      "MongoDB",
-      "Express.js",
-      "Node.js",
-      "Tailwind CSS",
-      "Mantine UI",
+      "My Sql",
+      "Vite",
+      "CSS",
+      "Node js",
     ],
     links: [
       {
         type: "Website",
-        href: "https://expense-log.vercel.app/",
-        icon: <Globe className="w-4 h-4" />,
+        href: "https://github.com/UNICAH-ICC-SAP/GestionPracticasWeb.git",
+        icon: <Github className="w-4 h-4" />,
       },
       {
         type: "Source",
-        href: "https://github.com/RijoKsd/Expense-Tracker",
+        href: "https://github.com/UNICAH-ICC-SAP/GestionPracticasApi.git",
         icon: <Github className="w-4 h-4" />,
       },
     ],
     image: expenseTrackerImage,
   },
   {
-    title: "Chat Application",
+    title: "Cargas Academicas Web",
     description:
-      "I created a real-time chat application using the MERN stack, incorporating JWT authentication and Socket.io for seamless communication. Users can send messages to different users in real time, and the system provides instant notifications whenever they receive new messages, ensuring smooth and interactive conversations.",
+      "Sistema creado para Crear El horario por periodo de cada carrera, cuenta con diferentes validaciones que evitan el coque de clases, de maestros, aulas y secciones asi como las funciones de crear, actualizar y eliminar clases asigadas.",
     technologies: [
       "React.js",
-      "JavaScript",
-      "MongoDB",
-      "Express.js",
-      "Node.js",
-      "Tailwind CSS",
-      "Daisy UI",
-      "Socket.io",
+      "TypeScript",
+      "My Sql",
+      "Vite",
+      "CSS",
+      "Node js",
     ],
     links: [
       {
         type: "Website",
-        href: "https://chat-application-in4i.onrender.com/",
-        icon: <Globe className="w-4 h-4" />,
+        href: "https://github.com/UNICAH-ICC-SAP/CargasAcademicas.git",
+        icon: <Github className="w-4 h-4" />,
       },
       {
         type: "Source",
-        href: "https://github.com/RijoKsd/Chat-Application",
+        href: "https://github.com/UNICAH-ICC-SAP/GestionPracticasApi.git",
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: chatImage,
+    image: expenseTrackerImage,
   },
   {
-    title: "Food Delivery App",
+    title: "Api RESTfull",
     description:
-      "Food Delivery App is a user-friendly application that allows users to browse and purchase food items from various menus. It features an admin section for managing products and orders, including adding new items, updating order statuses, and viewing all products. The app also includes a dummy Stripe payment integration and product filtering options for users",
+      "El backend está construido con Node.js y el framework Express para manejar las solicitudes HTTP. Autenticación: Utiliza JWT (JSON Web Tokens) para la autenticación de los usuarios. Los tokens son generados en el servidor y enviados al cliente tras un login exitoso. Gestión de Usuarios: Rutas para registro de usuarios, login, y manejo de perfiles de usuario. Encriptación de Contraseñas: Las contraseñas se encriptan utilizando bcrypt antes de ser almacenadas en la base de datos. Base de Datos (MongoDB)",
     technologies: [
-      "React.js",
+      "Angular js",
+      "TypeScript",
       "JavaScript",
       "MongoDB",
       "Express.js",
       "Node.js",
-      "Tailwind CSS",
-      "Stripe",
-      "Zustand",
+      "JWT",
     ],
     links: [
       {
-        type: "Website",
-        href: "https://food-delivery-app-fe.vercel.app/",
-        icon: <Globe className="w-4 h-4" />,
-      },
-      {
         type: "Source",
-        href: "https://github.com/RijoKsd/food-delivery-app",
+        href: "https://github.com/David-Andino/Login-MongoDB-NodeJS-Angular-Express.git",
         icon: <Github className="w-4 h-4" />,
       },
     ],
     image: foodImage,
   },
   {
-    title: "TODO App",
+    title: "Bot Discord",
     description:
-      "Todo App is a full-stack application built with the MERN stack, offering users the ability to register, log in, and reset their password using an OTP sent via email. It supports complete CRUD operations for managing todos, allows users to view pending and completed tasks, and provides options to view and edit their profile. JWT protected routes ensure secure access throughout the application.",
+      "ChichicasteBot es un bot desarrollado para interactuar con los usuarios de un servidor de discord.",
     technologies: [
-      "React.js",
       "JavaScript",
-      "MongoDB",
-      "Express.js",
+      "SQLite",
+      "Discord.js",
       "Node.js",
-      "Bootstrap",
     ],
     links: [
       {
-        type: "Website",
-        href: "https://todo-app-mern-fe.vercel.app/",
-        icon: <Globe className="w-4 h-4" />,
-      },
-      {
         type: "Source",
-        href: "https://github.com/RijoKsd/Todo-App-Mern",
+        href: "https://github.com/David-Andino/Chichicaste.git",
         icon: <Github className="w-4 h-4" />,
       },
     ],
     image: todoImage,
-  },
-  {
-    title: "E-Commerce Website",
-    description:
-      "E-Store is a React-based e-commerce site that lets users manage their cart by adding, deleting, and updating products, and completing purchases. It uses Redux Toolkit and Context API for state management, Redux Persist for localStorage, and features styling with Tailwind CSS and Daisy UI. The app includes smooth animations",
-    technologies: [
-      "React.js",
-      "JavaScript",
-      "Tailwind CSS",
-      "Daisy UI",
-      "Redux Toolkit",
-      "Redux Persist",
-    ],
-    links: [
-      {
-        type: "Website",
-        href: "https://react-estore-app.vercel.app/",
-        icon: <Globe className="w-4 h-4" />,
-      },
-      {
-        type: "Source",
-        href: "https://github.com/RijoKsd/E-Store",
-        icon: <Github className="w-4 h-4" />,
-      },
-    ],
-    image: eStoreImage,
   },
 ];
 
