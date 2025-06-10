@@ -11,6 +11,8 @@ const slugs = [
   "postman",
   "mongodb",
   "C#",
+  "C++",
+  "Python",
   "react",
   "android",
   "html5",

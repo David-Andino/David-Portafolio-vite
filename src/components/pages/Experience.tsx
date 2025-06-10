@@ -12,6 +12,15 @@ import { BriefcaseIcon, CodeIcon } from "lucide-react";
 
 const Experience: React.FC = () => {
   const experiences = [
+    {
+      title: "Software de Microservicios – Gestión Empresarial Tabacalera",
+      company: "Sabor del Mundo Tabacos S de RL de C.V.",
+      location: "El Paraíso, El Paraíso",
+      duration: "May 2024 - May 2025",
+      description: "Diseñé e implementé un sistema empresarial basado en arquitectura de microservicios, compuesto por tres módulos independientes pero complementarios: Gestión de Tabaco, Gestión de Empleados y Gestión de Usuarios. Cada sistema fue desarrollado como una aplicación individual, con su propia base de datos separada, lo que permite una mayor escalabilidad, seguridad y mantenimiento modular. El sistema completo es totalmente responsive, adaptándose fluidamente a dispositivos móviles, tabletas y PC, ofreciendo una experiencia de usuario clara, funcional y adaptable según el rol o área de trabajo.",
+      icon: <CodeIcon className="w-6 h-6" />,
+      skills: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "MySQL", "Bootstrap", "Git", "GitHub", "Docker" ],
+    },
    {
       title: "Gestor de Inventario y Ventas",
       company: "Mercadito La Reforma",

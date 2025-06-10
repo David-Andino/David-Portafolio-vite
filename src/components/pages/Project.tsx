@@ -7,6 +7,10 @@ import turfImage from "../../assets/projects/landingpage.png";
 import foodImage from "../../assets/projects/1__woXdoGspsNHgWXX4syipA.jpg";
 import todoImage from "../../assets/projects/estadoserver.png";
 import expenseTrackerImage from "../../assets/projects/GestionPW.png";
+import Tabaco from "../../assets/projects/gestionTabaco.png";
+import Usuarios from "../../assets/projects/usuarios.png";
+import Empleados from "../../assets/projects/empleados.png";
+import BotTelegram from "../../assets/projects/ChatGPT Image 10 jun 2025, 11_41_36 a.m..png";
 
 interface Project {
   title: string;
@@ -142,6 +146,109 @@ const projects: Project[] = [
     ],
     image: todoImage,
   },
+  {
+    title: "Sistema de Gestión de Procesos, Inventario, Ventas y Facturación de Tabaco",
+    description:
+      "un sistema integral para la gestión del proceso productivo del tabaco en una empresa tabacalera, abarcando el flujo completo desde la recepción del producto crudo hasta su facturación para exportación. El sistema está dividido en módulos por bodega y área administrativa, permitiendo trazabilidad, control de inventario y emisión de reportes.",
+    technologies: [
+      "JavaScript",
+      "MySql",
+      "Node js",
+      "Express js",
+      "HTML5",
+      "CSS",
+      "Bootstrap",
+    ],
+    links: [
+      {
+        type: "Source",
+        href: "https://github.com/David-Andino/Front-Sabor-del-Mundo.git",
+        icon: <Github className="w-4 h-4" />,
+      },
+      {
+        type: "Source",
+        href: "https://github.com/David-Andino/Backend_Tabacalera.git",
+        icon: <Github className="w-4 h-4" />,
+      },
+    ],
+    image: Tabaco,
+  },
+  {
+    title: "Sistema de Gestión de Usuarios y Autenticación",
+    description:
+      "un sistema de gestión de usuarios con control de accesos y roles personalizados para una empresa tabacalera, como parte de un ecosistema digital más amplio. Este módulo permite crear, editar y eliminar usuarios, asignarles permisos según su área (bodega, finanzas, RRHH, administración) y restringir funcionalidades con base en roles definidos..",
+    technologies: [
+      "JavaScript",
+      "MySql",
+      "Node js",
+      "Express js",
+      "HTML5",
+      "CSS",
+      "Bootstrap",
+    ],
+    links: [
+      {
+        type: "Source",
+        href: "https://github.com/David-Andino/Front-Sabor-del-Mundo.git",
+        icon: <Github className="w-4 h-4" />,
+      },
+      {
+        type: "Source",
+        href: "https://github.com/David-Andino/Login_Backend.git",
+        icon: <Github className="w-4 h-4" />,
+      },
+    ],
+    image: Usuarios,
+  },
+  {
+    title: "Sistema de Gestión de Empleados",
+    description:
+      "Diseñé e implementé un sistema web para la gestión del personal en una empresa tabacalera, permitiendo el registro de empleados, control de asistencia diaria, emisión de carnets personalizados y generación de reportes administrativos, optimizando así los procesos del área de Recursos Humanos.",
+    technologies: [
+      "JavaScript",
+      "MySql",
+      "Node js",
+      "Express js",
+      "HTML5",
+      "CSS",
+      "Bootstrap",
+      "JsPdf",
+      "html2canvas",
+      "JsBarcode",
+    ],
+    links: [
+      {
+        type: "Source",
+        href: "https://github.com/David-Andino/Front-Sabor-del-Mundo.git",
+        icon: <Github className="w-4 h-4" />,
+      },
+      {
+        type: "Source",
+        href: "https://github.com/David-Andino/Personal_Backend.git",
+        icon: <Github className="w-4 h-4" />,
+      },
+    ],
+    image: Empleados,
+  },
+  {
+    title: "Bot de Telegran para convertir videos de YouTube a MP3 o MP4",
+    description:
+      "Desarrollé un bot para Telegram que permite convertir videos de YouTube a formatos MP3 (audio) o MP4 (video) mediante comandos simples. El usuario solo necesita enviar un enlace de YouTube y el bot responde con el archivo convertido listo para descargar directamente en Telegram.",
+    technologies: [
+      "Python",
+      "python-telegram-bot",
+      "yt-dlp",
+      "FFmpeg",
+    ],
+    links: [
+      {
+        type: "Source",
+        href: "https://github.com/David-Andino/Telegram-bot-Python.git",
+        icon: <Github className="w-4 h-4" />,
+      },
+    ],
+    image: BotTelegram,
+  },
 ];
 
 const ProjectsSection: React.FC = () => {
@@ -154,7 +261,7 @@ const ProjectsSection: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-gray-100"
         >
-          My Projects
+          Mis Proyectos
         </motion.h2>
         <motion.div
           initial="hidden"
