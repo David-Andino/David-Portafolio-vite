@@ -73,16 +73,17 @@ const About: React.FC = () => {
           className="text-sm md:text-base text-gray-600 dark:text-gray-400 text-center md:text-left mb-4"
           variants={itemVariants}
         >
-          Soy un desarrollador apasionado con 4 años de experiencia creando soluciones eficientes y escalables. 
-          Tengo experiencia en el desarrollo de aplicaciones web y de escritorio. 
-          Me destaco por mi capacidad para resolver problemas, aprender rápidamente y adaptarme a entornos dinámicos.
+          Desarrollador de software con 5 años de experiencia diseñando e implementando aplicaciones web y de escritorio bajo principios de arquitectura limpia y buenas prácticas de desarrollo.
+
+Especializado en el ecosistema JavaScript (Node.js, React, Express) y .NET (C#, ASP.NET Core), con experiencia en diseño y construcción de APIs REST, autenticación basada en JWT, y consumo de servicios externos.
         </motion.p>
         <motion.p
           className="text-sm md:text-base text-gray-600 dark:text-gray-400 text-center md:text-left"
           variants={itemVariants}
         >
-          Busco aportar valor a equipos innovadores en un mercado laboral competitivo, ofreciendo mi compromiso, 
-          habilidades técnicas y enfoque en resultados para contribuir al éxito de cada proyecto.
+         Trabajo con bases de datos relacionales y NoSQL, aplicando optimización de consultas y diseño eficiente de modelos de datos. Manejo Git y GitHub como parte de flujos de integración y despliegue continuo (CI/CD).
+
+Mi enfoque combina capacidad analítica, rápida adaptación y orientación a resultados, aportando soluciones escalables que generan impacto real en los proyectos donde participo.
         </motion.p>
       </div>
     </motion.div>

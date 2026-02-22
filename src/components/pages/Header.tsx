@@ -59,7 +59,7 @@ const SubTitle: React.FC = () => (
   >
     <BoxReveal boxColor="#3b82f6" duration={0.5}>
       <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-gray-700 dark:text-gray-300 text-center">
-        Desarrollador jr | Ingeniero en Sistemas
+        Desarrollador Full Stack | Ingeniero en Ciencias de la Computación
       </p>
     </BoxReveal>
   </motion.div>

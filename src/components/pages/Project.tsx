@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import { Globe, Github } from "lucide-react";
 
-
+import GitHubDashboard from "../../assets/projects/GithubDashBoard.png";
 import turfImage from "../../assets/projects/landingpage.png";
 import foodImage from "../../assets/projects/1__woXdoGspsNHgWXX4syipA.jpg";
 import todoImage from "../../assets/projects/estadoserver.png";
@@ -20,6 +20,34 @@ interface Project {
   image: string;
 }
 const projects: Project[] = [
+  {
+    title: "Dashboard de información de ususarios en Github",
+    description:
+      "Analiza perfiles de GitHub en tiempo real: repositorios, commits, lenguajes y métricas clave, todo desde una interfaz limpia y rápida.",
+    technologies: [
+    "React.js",
+      "JavaScript",
+      "react-dom",
+      "CSS",
+      "HTML",
+      "Vite",
+      "lucide-react",
+      "recharts",
+    ],
+    links: [
+      {
+        type: "Website",
+        href: "https://david-andino.github.io/github-dashboard//",
+        icon: <Globe className="w-4 h-4" />,
+      },
+      {
+        type: "Source",
+        href: "https://github.com/David-Andino/github-dashboard.git",
+        icon: <Github className="w-4 h-4" />,
+      },
+    ],
+    image: GitHubDashboard,
+  },
   {
     title: "Página Inscripción Tecno Fest 2024",
     description:

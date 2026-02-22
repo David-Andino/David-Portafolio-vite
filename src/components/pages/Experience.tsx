@@ -36,9 +36,9 @@ const Experience: React.FC = () => {
       location: "Remoto",
       duration: "Feb 2022 - May 2022",
       description:
-        "Se desarrollarón Aplicaciones de Monitoreo del bot Mediante un Dashboard, Mensajes automatizados en Telegram y un generador de documentos de Excel.",
+        "Implementé un dashboard en tiempo real para análisis del comportamiento del mercado. Integré notificaciones automáticas vía Telegram para alertas operativas. Diseñé un generador de reportes automatizado en Excel para toma de decisiones.",
       icon: <BriefcaseIcon className="w-6 h-6" />,
-      skills: ["C#", "Firebase", ".Net Framework", "Node.js"],
+      skills: ["C#", "Firebase", ".Net Framework", "Node.js", "Telegram Bot API", "EPPlus", "CryptoExchange.Net", "Alpaca", "Binance", "Kucoin", "React"],
     },
     {
       title: "Bot trading",
@@ -46,7 +46,7 @@ const Experience: React.FC = () => {
       location: "Remoto",
       duration: "2021 - 2022",
       description:
-        "desarrollo de un bot de trading utilizando Node.js, C#, Firebase.",
+        "Desarrollé un bot de trading con Node.js, integrando APIs de Binance, KuCoin y Alpaca. Utilicé Firebase para almacenamiento y monitoreo en tiempo real. Implementé módulos adicionales en C# para interfaces de supervisión.",
       icon: <CodeIcon className="w-6 h-6" />,
       skills: ["Firebase", "C#", ".Net Framework", "Node js", "Alpaca", "Binance", "Kucoin", "CryptoExchange.Net"],
     },
