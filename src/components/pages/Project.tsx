@@ -10,7 +10,7 @@ import expenseTrackerImage from "../../assets/projects/GestionPW.png";
 import Tabaco from "../../assets/projects/gestionTabaco.png";
 import Usuarios from "../../assets/projects/usuarios.png";
 import Empleados from "../../assets/projects/empleados.png";
-import BotTelegram from "../../assets/projects/ChatGPT Image 10 jun 2025, 11_41_36 a.m..png";
+import BotTelegram from "../../assets/projects/telegram-bot.png";
 
 interface Project {
   title: string;
@@ -20,7 +20,7 @@ interface Project {
   image: string;
 }
 const projects: Project[] = [
-  {
+ {
     title: "Dashboard de información de ususarios en Github",
     description:
       "Analiza perfiles de GitHub en tiempo real: repositorios, commits, lenguajes y métricas clave, todo desde una interfaz limpia y rápida.",

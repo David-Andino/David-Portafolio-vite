@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 interface Project {
@@ -13,15 +14,24 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+
   return (
     <motion.div
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      className="relative border border-gray-300 dark:border-gray-700 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 bg-white dark:bg-gray-800"
+      whileTap={{ scale: 0.97 }}
+      onClick={() => setIsFlipped((prev) => !prev)}
+      className="relative border border-gray-300 dark:border-gray-700 rounded-xl shadow-lg overflow-hidden cursor-pointer bg-white dark:bg-gray-800"
     >
-      <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center p-4 opacity-0 hover:opacity-100 transition-opacity duration-300">
-        <h3 className="text-2xl font-bold text-white mb-4">{project.title}</h3>
-        <p className="text-gray-300 text-sm mb-4 text-center">
+      {/* Overlay — hover en desktop, click en móvil */}
+      <div
+        className={`absolute inset-0 z-10 bg-black bg-opacity-70 flex flex-col justify-center items-center p-4 transition-opacity duration-300
+          ${isFlipped ? "opacity-100" : "opacity-0"}
+          hover:opacity-100`}
+      >
+        <h3 className="text-xl font-bold text-white mb-3 text-center">
+          {project.title}
+        </h3>
+        <p className="text-gray-300 text-sm mb-4 text-center line-clamp-5">
           {project.description}
         </p>
         <div className="flex space-x-4">
@@ -31,23 +41,28 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-gray-200 transition-colors"
+              onClick={(e) => e.stopPropagation()} // evita cerrar el overlay al hacer click en el link
+              className="text-white hover:text-gray-300 transition-colors p-2"
             >
               {link.icon}
             </a>
           ))}
         </div>
       </div>
+
+      {/* Imagen */}
       <img
         src={project.image}
         alt={project.title}
-        className="w-full h-64 object-cover"
+        className="w-full h-56 object-cover"
       />
+
+      {/* Info inferior */}
       <div className="p-4">
-        <h4 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">
+        <h4 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-2">
           {project.title}
         </h4>
-        <div className="flex flex-wrap gap-2 mt-2">
+        <div className="flex flex-wrap gap-2">
           {project.technologies.map((tech) => (
             <span
               key={tech}
