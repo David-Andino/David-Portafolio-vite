@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect} from "react";
 import { CalendarIcon, HomeIcon, MailIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
@@ -127,7 +127,12 @@ export function DockDemo() {
               </Tooltip>
             </DockIcon>
           ))}
-          <Separator orientation="vertical" className="h-full" />
+
+          {/* ✅ Separator envuelto en DockIcon */}
+          <DockIcon className="w-auto px-1">
+            <Separator orientation="vertical" className="h-full" />
+          </DockIcon>
+
           {Object.entries(DATA.contact.social).map(([name, social]) => (
             <DockIcon key={name}>
               <Tooltip>
@@ -150,7 +155,12 @@ export function DockDemo() {
               </Tooltip>
             </DockIcon>
           ))}
-          <Separator orientation="vertical" className="h-full py-2" />
+
+          {/* ✅ Separator envuelto en DockIcon */}
+          <DockIcon className="w-auto px-1">
+            <Separator orientation="vertical" className="h-full py-2" />
+          </DockIcon>
+
           <DockIcon>
             <Tooltip>
               <TooltipTrigger asChild>

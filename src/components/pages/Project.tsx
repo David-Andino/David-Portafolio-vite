@@ -291,19 +291,11 @@ const ProjectsSection: React.FC = () => {
         >
           Mis Proyectos
         </motion.h2>
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: { opacity: 0, scale: 0.9 },
-            visible: { opacity: 1, scale: 1 },
-          }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
-          {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} project={project} />
           ))}
-        </motion.div>
+          </div>
       </div>
     </section>
   );
