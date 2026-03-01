@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import { Globe, Github } from "lucide-react";
 
+import  JWT from "../../assets/projects/AuthService_Arquitectura.png"
 import GitHubDashboard from "../../assets/projects/GithubDashBoard.png";
 import turfImage from "../../assets/projects/landingpage.png";
 import foodImage from "../../assets/projects/1__woXdoGspsNHgWXX4syipA.jpg";
@@ -20,6 +21,28 @@ interface Project {
   image: string;
 }
 const projects: Project[] = [
+  {
+    title: "Sistema de AuthServices con JWT, Refresh Tokens en ASP.NET Core y SQLite",
+    description:
+      "Un servicio de autenticación completo que va más allá del típico 'hello world con JWT'. Implementa el ciclo completo de seguridad que se necesita en producción: registro, login, rotación de tokens, revocación y protección contra ataques de fuerza bruta.",
+    technologies: [
+      "ASP.NET Core",
+      "Entity Framework Core",
+      "SQLite",
+      "JWT Bearer",
+      "Swashbuckle",
+      "C#",
+      "Swagger UI",
+    ],
+    links: [
+      {
+        type: "Source",
+        href: "https://github.com/David-Andino/auth-service-dotnet.git",
+        icon: <Github className="w-4 h-4" />,
+      },
+    ],
+    image: JWT,
+  },
  {
     title: "Dashboard de información de ususarios en Github",
     description:
